@@ -285,7 +285,7 @@ class cart extends Cart_controller{
             $orderData['total_amount_sale'] = $this->getTotalAmount($orderData['id_coupon'] ? md6($orderData['id_coupon']) : null);
             $orderData['total_price_promotion'] = $this->getTotalCart() - $orderData['total_amount_sale'];
 
-            if ($_POST['id_ship_fee']) {
+            if (isset($_POST['id_ship_fee']) && $_POST['id_ship_fee']) {
                 $orderData['id_ship_fee'] = md6_decode($_POST['id_ship_fee']);
                 $fee = $this->My_model->getdetail_by_any('ship_fee', array(
                     'is_active'=>1,
