@@ -135,7 +135,7 @@
         		$segment = (int)$segment;
 		        $alias = $this->uri->segment($segment);
 		        if($alias=='vi' || $alias=='en'){
-		            $alias = $this->alias->segment($segment+1);
+		            $alias = $this->uri->segment($segment+1);
 		        }
         	}
         	$where = array(
