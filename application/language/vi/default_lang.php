@@ -24,6 +24,7 @@
     $lang['coupon_expired'] = 'Coupon đã quá hạn';
     $lang['coupon_not_found'] = 'Không tìm thấy coupon';
 
+  $lang['homepage'] = 'Trang chủ';
   $lang['fullname'] = 'Họ tên';
   $lang['phone'] = 'Số điện thoại';
   $lang['email'] = 'E-mail';
